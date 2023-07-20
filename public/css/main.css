@@ -1,0 +1,213 @@
+/* FONT CONTAINER */
+
+@font-face {
+    font-family: opensans;
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: opensans-light;
+    src: url(font/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: opensans-bold;
+    src: url(font/OpenSans-bold.ttf);
+}
+
+/* BASE */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: opensans;
+    /* outline: 1px solid red; */
+}
+
+/* SPECIAL CODE */
+
+.p-collapse > * {
+    padding: 0px;
+}
+
+.m-collapse >  {
+    margin: 0px;
+}
+
+/* COLOR  */
+
+.font-primary-mu {
+    color: #FF8A35;
+}
+
+.bg-primary-mu {
+    background-color: #FF8A35;
+    color: white;
+}
+
+.b-primary-mu {
+    border-color: #FF8A35;
+    border-style: solid;
+}
+
+/* FONTWEIGHT  */
+
+.bold {
+    font-family: opensans-bold;
+}
+
+.regular {
+    font-family: opensans;
+
+}
+
+.light {
+    font-family: opensans-light;
+
+}
+
+/* LOGO  */
+
+.logo-xsm {
+    height: 25px;
+    width: 25px;
+}
+
+.logo-sm {
+    height: 40px;
+    width: 40px;
+}
+
+.logo-xl {
+    height: 70px;
+    width: 70px;
+}
+
+.blank {
+    background-color: grey;
+}
+
+/* SHADOW  */
+
+.shadow-regular {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ADD BUTTON CORNER ONLY  */
+
+.add-button {
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+/* ONE USE ONLY */
+
+.login-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.login-grid > .box > input:focus {
+    outline: 2px solid #FF8A35;
+}
+
+.navbar-button {
+    height: 60px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.navbar-button:hover {
+    color: white;
+    transform: scale(1.050);
+
+}
+
+.active {
+    transform: scale(1);
+    background-color: white;
+    color: #FF8A35;
+    transition: 0.3s ease;
+}
+
+.active:hover {
+    transform: scale(1.050);
+    background-color: white;
+    color: #FF8A35;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    gap: 15px;
+}
+
+.input-group-kompetisi {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    gap: 15px;
+}
+
+.input-group > *:focus {
+    outline: 2px solid #FF8A35;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.user-table {
+    vertical-align: middle;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 15px;
+    overflow-y: auto;
+    height: 90vh;
+}
+
+.wrapper > * {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-box {
+    height: 35vh;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.infobox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+}
+
+.infobox > * {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.actionbox {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.actionbox > * {
+    width: 80px;
+}
