@@ -29,6 +29,12 @@ Route::get('/pengguna', function () {
     ]);
 });
 
+Route::get('/detailpengguna', function () {
+    return view('home.detailpengguna', [
+        "title" => "pengguna"
+    ]);
+});
+
 Route::get('/kompetisi', function () {
     return view('home.kompetisi',[
         "title" => "kompetisi"

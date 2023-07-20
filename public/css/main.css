@@ -87,6 +87,11 @@
     background-color: grey;
 }
 
+.image-box {
+    height: 180px;
+    width: 180px;
+}
+
 /* SHADOW  */
 
 .shadow-regular {

@@ -12,7 +12,7 @@
           <th width="5%" scope="col">ID</th>
           <th width="20%" scope="col">Username</th>
           <th width="20%" scope="col">Nama</th>
-          <th width="30%" scope="col">Email</th>
+          <th width="20%" scope="col">Email</th>
           <th width="20%" scope="col">Skor</th>
           <th width="20%" scope="col">Aksi</th>
         </tr>
@@ -25,6 +25,7 @@
           <td>otto2gmail.com</td>
           <td>76</td>
           <td>
+            <a href="/detailpengguna" class="btn btn-success">Detail</a>
             <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Blokir</a>
           </td>
         </tr>
