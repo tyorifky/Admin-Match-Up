@@ -33,8 +33,8 @@
                 </div>
             </div>
             <div class="actionbox">
-                <button>Edit</button>
-                <button>Delete</button>
+                <button class="bg-success border-0 text-white">Edit</button>
+                <button class="bg-danger border-0 text-white" >Delete</button>
             </div>
         </div>
     </div>

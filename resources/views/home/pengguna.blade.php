@@ -25,12 +25,35 @@
           <td>otto2gmail.com</td>
           <td>76</td>
           <td>
-            <button class="btn btn-danger h-" >Blokir</button>
+            <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Blokir</a>
           </td>
         </tr>
 
       </tbody>
     </table>
+    <div class="modal" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 32vw" >
+          <div class="modal-header bg-primary-mu">
+            <div class="blank logo-sm rounded-circle d-inline-block"></div>
+            <h5 class="ps-2 modal-title ">
+              Konfirmasi Blokir
+            </h5>
+            <button type="button" class="btn-close btn-close-white"data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p  >Anda yakin ingin memblokir pengguna ini?</p>
+            <p>Nama: Otto</p>
+            <p>Email: Otto@gmail.com</p>
+            <p class="bold font-primary-mu" >Skor: 76</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="button" class="btn btn-danger">Blokir</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 @endsection
