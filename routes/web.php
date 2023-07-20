@@ -24,13 +24,13 @@ Route::get('/statistik', function () {
 });
 
 Route::get('/pengguna', function () {
-    return view('home.pengguna', [
+    return view('home.pengguna.home', [
         "title" => "pengguna"
     ]);
 });
 
 Route::get('/detailpengguna', function () {
-    return view('home.detailpengguna', [
+    return view('home.pengguna.detail', [
         "title" => "pengguna"
     ]);
 });
@@ -42,7 +42,19 @@ Route::get('/kompetisi', function () {
 });
 
 Route::get('/peta', function () {
-    return view('home.peta',[
+    return view('home.peta.home',[
+        "title" => "peta"
+    ]);
+});
+
+Route::get('/tambahpeta', function () {
+    return view('home.peta.add',[
+        "title" => "peta"
+    ]);
+});
+
+Route::get('/editpeta', function () {
+    return view('home.peta.edit',[
         "title" => "peta"
     ]);
 });

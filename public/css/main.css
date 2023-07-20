@@ -225,3 +225,8 @@ body.modal-open .modal {
 body.modal-open .modal .modal-dialog {
     margin: auto;
 }
+
+.add-map-display {
+    width: 50%;
+    height: 60vh;
+}
