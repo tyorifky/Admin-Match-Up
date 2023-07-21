@@ -36,7 +36,13 @@ Route::get('/detailpengguna', function () {
 });
 
 Route::get('/kompetisi', function () {
-    return view('home.kompetisi',[
+    return view('home.kompetisi.home',[
+        "title" => "kompetisi"
+    ]);
+});
+
+Route::get('/tambahkompetisi', function () {
+    return view('home.kompetisi.add',[
         "title" => "kompetisi"
     ]);
 });

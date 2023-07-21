@@ -230,3 +230,13 @@ body.modal-open .modal .modal-dialog {
     width: 50%;
     height: 60vh;
 }
+
+.kompetisi-wrapper-1 {
+    box-sizing: border-box;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    column-gap: 15px;
+    grid-template-areas: "w1-1 w1-2" "w1-3 w1-3";
+}

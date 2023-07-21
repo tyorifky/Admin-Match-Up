@@ -33,13 +33,11 @@
                 </div>
             </div>
             <div class="actionbox">
-                <button class="bg-success border-0 text-white">Edit</button>
+                <a href="#" class="text-center bg-success border-0 text-white" style="text-decoration: none" >Edit</a>
                 <button class="bg-danger border-0 text-white" >Delete</button>
             </div>
         </div>
     </div>
 </div>
-<div class="add-button rounded-circle blank m-3">
-
-</div>
+<a href="/tambahkompetisi" class="add-button rounded-circle blank m-3"></a>
 @endsection
