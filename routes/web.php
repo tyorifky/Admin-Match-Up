@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,8 @@ Route::get('/statistik', function () {
         "title" => 'statistik'
     ]);
 });
+
+// Route::get('/pengguna', [UserController::class, 'index']);
 
 Route::get('/pengguna', function () {
     return view('home.pengguna.home', [
