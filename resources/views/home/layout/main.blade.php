@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ADMIN | {{ $title }}</title>
+    <title>ADMIN |</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -16,19 +16,19 @@
                     <div class="logo-sm blank"></div>
                 </div>
                 <div class="d-flex flex-column" >
-                    <a href="/statistik" class="w-100 navbar-button ps-3 {{ ($title === 'statistik') ? 'active' : '';}} ">
+                    <a href="/statistik" class="w-100 navbar-button ps-3">
                         <div class="logo-xsm d-inline-block blank"></div>
                         <p class="m-0 ms-3">Statistik</p>
                     </a>
-                    <a href="/pengguna" class="w-100 navbar-button ps-3 {{ ($title === 'pengguna') ? 'active' : '';}}" >
+                    <a href="/pengguna" class="w-100 navbar-button ps-3" >
                         <div class="logo-xsm d-inline-block blank"></div>
                         <p class="m-0 ms-3">Pengguna</p>
                     </a>
-                    <a href="/kompetisi" class="w-100 navbar-button ps-3 {{ ($title === 'kompetisi') ? 'active' : '';}}" >
+                    <a href="/kompetisi" class="w-100 navbar-button ps-3 " >
                         <div class="logo-xsm d-inline-block blank"></div>
                         <p class="m-0 ms-3">Kompetisi</p>
                     </a>
-                    <a href="/peta" class="w-100 navbar-button ps-3 {{ ($title === 'peta') ? 'active' : '';}}" >
+                    <a href="/peta" class="w-100 navbar-button ps-3" >
                         <div class="logo-xsm d-inline-block blank"></div>
                         <p class="m-0 ms-3">Peta</p>
                     </a>

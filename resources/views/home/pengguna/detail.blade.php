@@ -9,8 +9,8 @@
         </div>
         <section class="d-flex flex-column align-items-center py-3 mt-5"  >
             <div class="image-box rounded-circle blank"></div>
-            <h3 class="my-3">Title</h3>
-            <p class="text-muted" >Email</p>
+            <h3 class="my-3">{{$user->username}}</h3>
+            <p class="text-muted" >{{$user->email}}</p>
             <div class="w-25 d-flex justify-content-evenly px-5" >
                 <a href="" class="logo-xsm blank "></a>
                 <a href="" class="logo-xsm blank "></a>

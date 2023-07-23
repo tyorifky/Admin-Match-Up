@@ -24,19 +24,20 @@ Route::get('/statistik', function () {
     ]);
 });
 
-// Route::get('/pengguna', [UserController::class, 'index']);
+Route::get('/pengguna', [UserController::class, 'index']);
 
-Route::get('/pengguna', function () {
-    return view('home.pengguna.home', [
-        "title" => "pengguna"
-    ]);
-});
+// Route::get('/pengguna', function () {
+//     return view('home.pengguna.home', [
+//         "title" => "pengguna"
+//     ]);
+// });
 
-Route::get('/detailpengguna', function () {
-    return view('home.pengguna.detail', [
-        "title" => "pengguna"
-    ]);
-});
+Route::get('/detailpengguna/{id}', [UserController::class, 'detail']);
+// Route::get('/detailpengguna', function () {
+//     return view('home.pengguna.detail', [
+//         "title" => "pengguna"
+//     ]);
+// });
 
 Route::get('/kompetisi', function () {
     return view('home.kompetisi.home',[

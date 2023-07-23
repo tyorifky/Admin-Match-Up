@@ -18,17 +18,19 @@
         </tr>
       </thead>
       <tbody >
+        @foreach ($user as $user)
         <tr class="user-table" >
           <th>1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>otto2gmail.com</td>
-          <td>76</td>
+          <td>{{$user->username}}</td>
+          <td>{{$user->name}}</td>
+          <td>{{$user->email}}</td>
+          <td>100</td>
           <td>
-            <a href="/detailpengguna" class="btn btn-success">Detail</a>
+            <a href="/detailpengguna/{{$user->id}}" class="btn btn-success">Detail</a>
             <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Blokir</a>
           </td>
         </tr>
+        @endforeach
 
       </tbody>
     </table>
@@ -44,9 +46,9 @@
           </div>
           <div class="modal-body">
             <p  >Anda yakin ingin memblokir pengguna ini?</p>
-            <p>Nama: Otto</p>
-            <p>Email: Otto@gmail.com</p>
-            <p class="bold font-primary-mu" >Skor: 76</p>
+            <p>Nama: {{$user->name}}</p>
+            <p>Email: {{$user->email}}</p>
+            <p class="bold font-primary-mu" >Skor: 100</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
