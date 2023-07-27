@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/statistik', function () {
     return view('home.statistik', [
-        "title" => 'statistik'
+        "page" => 'statistik'
     ]);
 });
 

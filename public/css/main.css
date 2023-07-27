@@ -21,7 +21,7 @@
     margin: 0px;
     padding: 0px;
     font-family: opensans;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* SPECIAL CODE */
@@ -85,6 +85,11 @@
 
 .blank {
     background-color: grey;
+}
+
+.admin-logo {
+    height: 130px;
+    width: 130px;
 }
 
 .image-box {

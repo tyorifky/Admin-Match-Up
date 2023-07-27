@@ -12,7 +12,7 @@
     <div class="container-fluid vw-100 vh-100 d-flex justify-content-center align-items-center p-5" style="background-color: #E4E4E4">
         <div class="row h-75 m-collapse shadow-regular bg-white" style="width: 65%">
             <div class="col-6 d-flex flex-column h-100 justify-content-between pt-3 bg-primary-mu">
-                <div class="logo-sm blank"></div>
+                <div class="logo-sm " style="background-image: url(/css/img/icon.svg); background-size: contain;" ></div>
                 <span>
                     <h1 class="bold lh-1" style="font-size: 100px" >ADMIN</h1>
                     <h6 style="font-size: 40px">PAGE</h6>
@@ -23,8 +23,6 @@
                     <h5>Selamat Datang</h5>
                 </div>
                 <div class="box">
-                    <label for="username">Nama</label>
-                    <input id="username" class="w-100 h-75 ps-1 " style="border: 3px solid #FF8A35" type="text">
                 </div>
                 <div class="box">
                     <label for="email">Email</label>
@@ -35,7 +33,7 @@
                     <input id="code" class="w-100 h-75 ps-1" style="border: 3px solid #FF8A35" type="text">
                 </div>
                 <button class="bg-primary-mu border-0 bold fs-5 text-uppercase">
-                    <a href="/statistik">Masuk</a>
+                    <a class="text-decoration-none " style="color: white" href="/statistik">Masuk</a>
                 </button>
             </div>
         </div>
