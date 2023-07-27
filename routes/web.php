@@ -25,6 +25,7 @@ Route::get('/statistik', function () {
 });
 
 Route::get('/pengguna', [UserController::class, 'index']);
+Route::delete('pengguna/{id}',[UserSparringController::class, 'destroy']);
 
 // Route::get('/pengguna', function () {
 //     return view('home.pengguna.home', [
@@ -33,6 +34,7 @@ Route::get('/pengguna', [UserController::class, 'index']);
 // });
 
 Route::get('/detailpengguna/{id}', [UserController::class, 'detail']);
+Route::get('/detailpenggunaa/{id}', [UserController::class, 'detail2']);
 // Route::get('/detailpengguna', function () {
 //     return view('home.pengguna.detail', [
 //         "title" => "pengguna"

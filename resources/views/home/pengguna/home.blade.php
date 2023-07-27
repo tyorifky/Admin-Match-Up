@@ -27,7 +27,7 @@
           <td>100</td>
           <td>
             <a href="/detailpengguna/{{$user->id}}" class="btn btn-success">Detail</a>
-            <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Blokir</a>
+            <a href="/detailpenggunaa/{{$user->id}}" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Blokir</a>
           </td>
         </tr>
         @endforeach

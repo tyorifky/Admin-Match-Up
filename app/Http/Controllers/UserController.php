@@ -17,4 +17,14 @@ class UserController extends Controller
         $user = DB::table('users')->find($id);
         return view('home.pengguna.detail', compact(['user']));
     }
+
+    public function detail2($id){
+        $user = DB::table('users')->find($id);
+        return view('home.pengguna.detail', compact(['user']));
+    }
+
+    public function destroy($id){
+        DB::table('users')->where('id', $id)->delete();
+        return redirect('/pengguna');
+    }
 }
