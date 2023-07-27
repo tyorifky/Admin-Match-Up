@@ -20,15 +20,15 @@
             </div>
             <div class="infobox">
                 <div>
-                    <div class="logo-xsm blank " ></div>
+                    <div class="logo-xsm  " style="background-image: url(/css/img/kalender.svg); background-size: contain;" ></div>
                     Hello
                 </div>
                 <div>
-                    <div class="logo-xsm blank" ></div>
+                    <div class="logo-xsm " style="background-image: url(/css/img/lokasi.svg); background-size: contain;" ></div>
                     Hello
                 </div>
                 <div>
-                    <div class="logo-xsm blank" ></div>
+                    <div class="logo-xsm " style="background-image: url(/css/img/price.svg); background-size: contain;" ></div>
                     Hello
                 </div>
             </div>
@@ -39,5 +39,5 @@
         </div>
     </div>
 </div>
-<a href="/tambahkompetisi" class="add-button rounded-circle blank m-3"></a>
+<a href="/tambahkompetisi" class="add-button rounded-circle m-3" style="background-image: url(/css/img/add.svg); background-size: contain;" ></a>
 @endsection

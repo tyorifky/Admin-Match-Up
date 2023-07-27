@@ -12,29 +12,31 @@
     <div class="container-fluid" style="overflow: hidden">
         <div class="row vh-100 vw-100 ">
             <div class="col-2 bg-primary-mu p-0 h-100 d-flex flex-column justify-content-between">
-                <div style="height: 60px" class="p-3" >
-                    <div class="logo-sm blank"></div>
-                </div>
                 <div class="d-flex flex-column" >
-                    <a href="/statistik" class="w-100 navbar-button ps-3">
-                        <div class="logo-xsm d-inline-block blank"></div>
-                        <p class="m-0 ms-3">Statistik</p>
+                    <div style="height: 35vh" class="p-3 mb-3 d-flex flex-column justify-content-evenly align-items-center" >
+                        <img class="admin-logo rounded-circle blank">
+                        <h5 class="m-0 bold" >Title</h5>
+                        <p style="font-size: 12px; opacity: 75%"  class="m-0" >Email</p>
+                    </div>
+                    <a href="/statistik" class="w-100 navbar-button ps-3" style="{{ session('page') === 'statistik' ? 'background: white' : 'background: #FF8A35' }}" >
+                        <img class="logo-xsm d-inline-block " src="/css/img/statistik.svg"  style="{{ session('page') === 'statistik' ? 'filter: none;' : 'filter: brightness(0) invert(1);' }} object-fit: contain;" >
+                        <p class="m-0 ms-3" style="{{ session('page') === 'statistik' ? 'color: #FFBA35' : 'color: white' }}" >statistik</p>
                     </a>
-                    <a href="/pengguna" class="w-100 navbar-button ps-3" >
-                        <div class="logo-xsm d-inline-block blank"></div>
-                        <p class="m-0 ms-3">Pengguna</p>
+                    <a href="/pengguna" class="w-100 navbar-button ps-3" style="{{ session('page') === 'pengguna' ? 'background: white' : 'background: #FF8A35' }}" >
+                        <img class="logo-xsm d-inline-block " src="/css/img/pengguna.svg"  style="{{ session('page') === 'pengguna' ? 'filter: none;' : 'filter: brightness(0) invert(1);' }} object-fit: contain;" >
+                        <p class="m-0 ms-3" style="{{ session('page') === 'pengguna' ? 'color: #FFBA35' : 'color: white' }}" >Pengguna</p>
                     </a>
-                    <a href="/kompetisi" class="w-100 navbar-button ps-3 " >
-                        <div class="logo-xsm d-inline-block blank"></div>
-                        <p class="m-0 ms-3">Kompetisi</p>
+                    <a href="/kompetisi" class="w-100 navbar-button ps-3" style="{{ session('page') === 'kompetisi' ? 'background: white' : 'background: #FF8A35' }}" >
+                        <img class="logo-xsm d-inline-block " src="/css/img/kompetisi.svg"  style="{{ session('page') === 'kompetisi' ? 'filter: none;' : 'filter: brightness(0) invert(1);' }} object-fit: contain;" >
+                        <p class="m-0 ms-3" style="{{ session('page') === 'kompetisi' ? 'color: #FFBA35' : 'color: white' }}" >kompetisi</p>
                     </a>
-                    <a href="/peta" class="w-100 navbar-button ps-3" >
-                        <div class="logo-xsm d-inline-block blank"></div>
-                        <p class="m-0 ms-3">Peta</p>
+                    <a href="/peta" class="w-100 navbar-button ps-3" style="{{ session('page') === 'peta' ? 'background: white' : 'background: #FF8A35' }}" >
+                        <img class="logo-xsm d-inline-block " src="/css/img/Map.svg"  style="{{ session('page') === 'peta' ? 'filter: none;' : 'filter: brightness(0) invert(1);' }} object-fit: contain;" >
+                        <p class="m-0 ms-3" style="{{ session('page') === 'peta' ? 'color: #FFBA35' : 'color: white' }}" >peta</p>
                     </a>
                 </div>
                 <a href="/" class="w-100 navbar-button ps-3 " >
-                    <div class="logo-xsm d-inline-block blank"></div>
+                    <div class="logo-xsm d-inline-block " style="background-image: url(/css/img/logout.svg); background-size: contain;" ></div>
                     <p class="m-0 ms-3">log Out</p>
                 </a>
             </div>

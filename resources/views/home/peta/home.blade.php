@@ -30,7 +30,7 @@
   
         </tbody>
       </table>
-    <a href="/tambahpeta" class="add-button rounded-circle blank m-3"></a>
+    <a href="/tambahpeta" class="add-button rounded-circle m-3" style="background-image: url(/css/img/add.svg); background-size: contain;" ></a>
     <div class="modal" id="exampleModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content" style="width: 32vw" >

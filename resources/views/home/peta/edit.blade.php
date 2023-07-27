@@ -3,7 +3,7 @@
 @section('content')
     <div class="container-fluid vh-100" style="overflow-y: auto">
         <div class="d-flex align-items-center pt-3 pb-2 position-fixed bg-white w-75">
-            <a href="/peta" class="logo-sm blank"></a>
+            <a href="/peta" class="logo-sm " style="background-image: url(/css/img/back.svg); background-size: contain;" ></a>
             <h3 class="text-dark m-0 p-0 ps-3">Edit Peta</h3>
             <div></div>
         </div>
