@@ -9,7 +9,7 @@
         </div>
         <section class="d-flex flex-column align-items-center py-3 mt-5">
           <p>Tampilan Peta</p>
-            <div class="add-map-display blank"></div>
+            <iframe src="" id="mapsdisplay" class="add-map-display blank"></iframe>
             <form class="w-50 pt-3" action="/tambahpeta/store" method="post">
               @csrf
               <div class="mb-3">
@@ -26,7 +26,8 @@
               </div>
               <div class="mb-3">
                 <label for="embed" class="form-label">Embed google Maps</label>
-                <input type="text" class="form-control" id="embed" name="embed_google_map" placeholder="Masukkan Embed google Maps Lokasi..." style="border: 3px solid #FF8A35">
+                <input type="text" id="embedinput" onchange="mapsview()" class="form-control" id="embed"  placeholder="Masukkan Embed google Maps Lokasi..." style="border: 3px solid #FF8A35">
+                <input class="d-none" name="embed_google_map" id="embed-sort" >
               </div>
               <button type="submit" name="submit" value="save" class="btn bg-primary-mu rounded-0">Submit</button>
             </form>
