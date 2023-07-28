@@ -19,7 +19,7 @@ class MapController extends Controller
     }
 
     public function store(Request $request){
-        
+
         // dd($request->all());
         $this->validate($request, rules: [
             'title_lokasi' => 'required',
@@ -35,7 +35,6 @@ class MapController extends Controller
             'embed_google_map' => $request->embed_google_map,
         ]);
 
-        Map::create($request -> except(['_token','submit']));
         return redirect('/peta');
     }
 }
