@@ -20,15 +20,14 @@
         
         <tbody >
           @foreach ($map as $map)
-          <tr class="user-table" >
-            
-            <th>1</th>
-            <td>{{$map->title_lokasi}}</td>
-            <td>{{$map->detail_lokasi}}</td>
-            <td>{{$map->harga_sewa_lokasi}}</td>
+          <tr class="user-table">
+            <th>{{ $loop->iteration }}</th>
+            <td>{{ $map->title_lokasi }}</td>
+            <td>{{ $map->detail_lokasi }}</td>
+            <td>{{ $map->harga_sewa_lokasi }}</td>
             <td>
-              <a href="/editpeta" class="btn btn-success " >Edit</a>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Hapus</button>
+              <a href="/editpeta" class="btn btn-success">Edit</a>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Hapus</button>
             </td>
           </tr>
           @endforeach
