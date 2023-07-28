@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MapController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -53,17 +54,20 @@ Route::get('/tambahkompetisi', function () {
     ]);
 });
 
-Route::get('/peta', function () {
-    return view('home.peta.home',[
-        "title" => "peta"
-    ]);
-});
+// Route::get('/peta', function () {
+//     return view('home.peta.home',[
+//         "title" => "peta"
+//     ]);
+// });
+Route::get('/peta', [MapController::class, 'index']);
+Route::get('/tambahpeta', [MapController::class, 'tambah']);
+Route::post('/tambahpeta/store', [MapController::class, 'store']);
 
-Route::get('/tambahpeta', function () {
-    return view('home.peta.add',[
-        "title" => "peta"
-    ]);
-});
+// Route::get('/tambahpeta', function () {
+//     return view('home.peta.add',[
+//         "title" => "peta"
+//     ]);
+// });
 
 Route::get('/editpeta', function () {
     return view('home.peta.edit',[
