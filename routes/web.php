@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MapController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\KompetisiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,11 +43,13 @@ Route::get('/detailpenggunaa/{id}', [UserController::class, 'detail2']);
 //     ]);
 // });
 
-Route::get('/kompetisi', function () {
-    return view('home.kompetisi.home',[
-        "title" => "kompetisi"
-    ]);
-});
+// Route::get('/kompetisi', function () {
+//     return view('home.kompetisi.home',[
+//         "title" => "kompetisi"
+//     ]);
+// });
+Route::get('/kompetisi', [KompetisiController::class, 'index']);
+Route::post('/kompetisi/store', [KompetisiController::class, 'store']);
 
 Route::get('/tambahkompetisi', function () {
     return view('home.kompetisi.add',[
@@ -62,6 +65,8 @@ Route::get('/tambahkompetisi', function () {
 Route::get('/peta', [MapController::class, 'index']);
 Route::get('/tambahpeta', [MapController::class, 'tambah']);
 Route::post('/tambahpeta/store', [MapController::class, 'store']);
+Route::delete('/peta/{id}', [MapController::class, 'destroy']);
+Route::get('/peta/detaildestroy/{id}', [MapController::class, 'detaildestroy']);
 
 // Route::get('/tambahpeta', function () {
 //     return view('home.peta.add',[
