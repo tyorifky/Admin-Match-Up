@@ -32,7 +32,7 @@
             <td>{{ $map->harga_sewa_lokasi }}</td>
             <td>
               <a href="/editpeta" class="btn btn-success">Edit</a>
-              <form action="/peta/{{$map->id}}" method="post">
+              <form class="d-inline-block" action="/peta/{{$map->id}}" method="post">
                 @csrf
                 @method('delete')
                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">

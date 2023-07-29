@@ -30,4 +30,19 @@ function mapsview() {
     console.log(originalString);
   }
   
+  function searchLocation() {
+    const input = document.getElementById('searchinput').value.toLowerCase();
+    const mapsBoxes = document.querySelectorAll('.maps-box');
+  
+    mapsBoxes.forEach(box => {
+      const dataFilter = box.getAttribute('data-filter');
+      const dataName = box.querySelector('h6').innerText.toLowerCase();
+  
+      if (dataName.includes(input)) {
+        box.style.display = 'block';
+      } else {
+        box.style.display = 'none';
+      }
+    });
+  }
 

@@ -9,7 +9,7 @@
         </div>
         <section class="d-flex flex-column align-items-center py-3 mt-5">
           <p>Tampilan Peta</p>
-            <div class="add-map-display blank"></div>
+          <iframe src="" id="mapsdisplay" class="add-map-display blank"></iframe>
             <form class="w-50 pt-3" >
               <div class="mb-3">
                 <label for="Title" class="form-label">Title Lokasi</label>

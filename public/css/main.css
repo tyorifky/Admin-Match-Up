@@ -21,7 +21,8 @@
     margin: 0px;
     padding: 0px;
     font-family: opensans;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
+    grid
 }
 
 /* SPECIAL CODE */
@@ -265,7 +266,7 @@ body.modal-open .modal .modal-dialog {
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 6fr;
+    grid-template-rows: 2fr 7fr;
     column-gap: 15px;
 }
 
@@ -347,5 +348,36 @@ body.modal-open .modal .modal-dialog {
     border: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+}
+
+.modal-custom .modal-dialog {
+    width: 70vw;
+}
+
+.modal-content-maps {
+    height: 90vh;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.maps-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 80px 80px;
+    overflow-y: scroll;
+    height: 60vh;
+    
+}
+
+.maps-box {
+    height: 80px;
+    border: transparent;
+    border-bottom: 3px solid grey;
+    text-align: left;
+    background-color: white;
 }
 
