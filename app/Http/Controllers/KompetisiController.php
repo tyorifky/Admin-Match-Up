@@ -8,8 +8,13 @@ use Illuminate\Support\Facades\DB;
 class KompetisiController extends Controller
 {   
     public function index(){
-        $map = DB::table('kompetisi')->get();
-        return view('home.kompetisi.home', compact(['map']));
+        $kompetisi = DB::table('kompetisi')->get();
+        return view('home.kompetisi.home', compact(['kompetisi']));
+    }
+
+    public function tambah(){
+        $kompetisi = DB::table('kompetisi')->get();
+        return view('home.kompetisi.add', compact(['kompetisi']));
     }
 
     public function store(Request $request){
@@ -23,9 +28,7 @@ class KompetisiController extends Controller
             'juara_kedua' => 'required',
             'juara_ketiga' => 'required',
             'lokasi' => 'required',
-            'detail_lokasi' => 'required',
             'max_member' => 'required',
-            'aksebilitas' => 'required',
             'tingkatan' => 'required',
             'tanggal_pertandingan' => 'required',
             'harga_tiket' => 'required',
@@ -42,9 +45,7 @@ class KompetisiController extends Controller
             'juara_kedua' => $request->juara_pertama,
             'juara_ketiga' => $request->juara_pertama,
             'lokasi' => $request->lokasi,
-            'detail_lokasi' => $request->detail_lokasi,
             'max_member' => $request->max_member,
-            'aksebilitas' => $request->aksebilitas,
             'tingkatan' => $request->tingkatan,
             'tanggal_pertandingan' => $request->tanggal_pertandingan,
             'harga_tiket' => $request->harga_tiket,
@@ -55,4 +56,6 @@ class KompetisiController extends Controller
 
         return redirect('/kompetisi');
     }
+
+    
 }

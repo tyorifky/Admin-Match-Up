@@ -49,4 +49,23 @@ class MapController extends Controller
         $map = Map::find($id);
         return view('home.peta.detaildestroy', compact(['map']));
     }
+
+    public function edit($id)
+    {
+        // dd($id);
+        $map = Map::find($id);
+        return view('home.peta.edit', compact(['map']));
+    }
+
+    public function update(Request $request, $id){
+
+        $map = Map::find($id);
+        $map->update([
+            'title_lokasi' => $request->title_lokasi,
+            'detail_lokasi' => $request->detail_lokasi,
+            'harga_sewa_lokasi' => $request->harga_sewa_lokasi,
+            'embed_google_map' => $request->embed_google_map,
+        ]);
+        return redirect('/peta');
+    }
 }
