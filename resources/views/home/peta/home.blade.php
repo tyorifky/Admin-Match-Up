@@ -31,7 +31,7 @@
             <td>{{ $map->detail_lokasi }}</td>
             <td>{{ $map->harga_sewa_lokasi }}</td>
             <td>
-              <a href="/editpeta/{{$map->id}}" class="btn btn-success">Edit</a>
+              <a href="/editpeta/{{$map->id}}/edit" class="btn btn-success">Edit</a>
               <form action="/peta/{{$map->id}}" method="post">
                 @csrf
                 @method('delete')

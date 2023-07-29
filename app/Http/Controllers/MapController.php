@@ -58,8 +58,8 @@ class MapController extends Controller
         return view('home.peta.edit', compact(['map']));
     }
 
-    public function update(Request $request, $id){
-
+    public function update($id, Request $request ){
+        // dd($request->all());
         $map = Map::find($id);
         $map->update([
             'title_lokasi' => $request->title_lokasi,
