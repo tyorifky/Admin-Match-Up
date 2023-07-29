@@ -104,7 +104,7 @@
                 <div class="mb-3" >
                     <label for="lokasi" class="form-label">Lokasi Kompetisi</label>
                     <div class="w-100" style="display: grid; grid-template-columns: 3fr 1fr; gap: 15px;">
-                        <input type="text" class="form-control input-kompetisi h-100" id="lokasi" name="lokasi" placeholder="Masukkan deskripsi juara..." style="border: 3px solid #FF8A35">
+                        <input type="text" class="form-control input-kompetisi h-100" id="lokasi" name="lokasi" value="{{$kompetisi->lokasi}}" placeholder="Masukkan deskripsi juara..." style="border: 3px solid #FF8A35">
                         <a data-bs-toggle="modal" data-bs-target="#MapsInput" class="btn bg-primary-mu h-100">Tambah</a>
                     </div>
                 </div>
