@@ -1,5 +1,10 @@
 @extends('home.layout.main')
 
+<div id="notification" class="alert position-absolute notification justify-content-between mt-sm-4 mt-2 {{ session('notification') === 'Peta berhasil di tambah' || session('notification') === 'Anda telah bergabung dengan Tim!' || session('notification') === 'Anda sudah terdaftar sebagai peserta Tim ini!' ? 'appear' : 'd-none' }}"  role="alert">
+  <p class="d-inline-block p-0 m-0 " >{{ session('notification') }}</p>
+  <button type="button" class="btn-close btn-close" onclick="closenotification()" aria-label="Close"></button>
+</div>
+
 @section('content')
 <div class="container pt-3">
     <div class="input-group mb-3">
@@ -37,6 +42,7 @@
       </table>
     
     <a href="/tambahpeta" class="add-button rounded-circle m-3" style="background-image: url(/css/img/add.svg); background-size: contain;" ></a>
+    
     <div class="modal" id="exampleModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content" style="width: 32vw" >

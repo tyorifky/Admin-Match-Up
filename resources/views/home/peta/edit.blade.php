@@ -25,7 +25,8 @@
               </div>
               <div class="mb-3">
                 <label for="embed" class="form-label">Embed google Maps</label>
-                <input type="text" class="form-control" id="embed" placeholder="Masukkan Embed google Maps Lokasi..." style="border: 3px solid #FF8A35">
+                <input type="text" id="embedinput" onchange="mapsview()" class="form-control" id="embed"  placeholder="Masukkan Embed google Maps Lokasi..." style="border: 3px solid #FF8A35" required>
+                <input class="d-none" name="embed_google_map" id="embed-sort" >
               </div>
               <button type="submit" class="btn bg-primary-mu rounded-0">Submit</button>
               <button type="submit" class="btn btn-danger rounded-0">Delete</button>
