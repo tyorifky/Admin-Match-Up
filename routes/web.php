@@ -49,13 +49,14 @@ Route::get('/detailpenggunaa/{id}', [UserController::class, 'detail2']);
 //     ]);
 // });
 Route::get('/kompetisi', [KompetisiController::class, 'index']);
+Route::get('/tambahkompetisi', [KompetisiController::class, 'tambah']);
 Route::post('/kompetisi/store', [KompetisiController::class, 'store']);
 
-Route::get('/tambahkompetisi', function () {
-    return view('home.kompetisi.add',[
-        "title" => "kompetisi"
-    ]);
-});
+// Route::get('/tambahkompetisi', function () {
+//     return view('home.kompetisi.add',[
+//         "title" => "kompetisi"
+//     ]);
+// });
 
 // Route::get('/peta', function () {
 //     return view('home.peta.home',[
@@ -63,6 +64,8 @@ Route::get('/tambahkompetisi', function () {
 //     ]);
 // });
 Route::get('/peta', [MapController::class, 'index']);
+Route::get('/editpeta/{id}/edit', [MapController::class, 'edit']);
+Route::put('/editpeta/{id}', [MapController::class, 'update']);
 Route::get('/tambahpeta', [MapController::class, 'tambah']);
 Route::post('/tambahpeta/store', [MapController::class, 'store']);
 Route::delete('/peta/{id}', [MapController::class, 'destroy']);
@@ -74,8 +77,8 @@ Route::get('/peta/detaildestroy/{id}', [MapController::class, 'detaildestroy']);
 //     ]);
 // });
 
-Route::get('/editpeta', function () {
-    return view('home.peta.edit',[
-        "title" => "peta"
-    ]);
-});
+// Route::get('/editpeta', function () {
+//     return view('home.peta.edit',[
+//         "title" => "peta"
+//     ]);
+// });

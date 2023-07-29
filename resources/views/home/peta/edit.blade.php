@@ -9,24 +9,26 @@
         </div>
         <section class="d-flex flex-column align-items-center py-3 mt-5">
           <p>Tampilan Peta</p>
-          <iframe src="" id="mapsdisplay" class="add-map-display blank"></iframe>
-            <form class="w-50 pt-3" >
+            <div class="add-map-display blank"></div>
+            
+            <form class="w-50 pt-3" action="/editpeta/{{$map->id}}" method="POST">
+              @method('put')
+              @csrf
               <div class="mb-3">
                 <label for="Title" class="form-label">Title Lokasi</label>
-                <input type="text" class="form-control" id="Title" placeholder="Masukkan title lokasi... " style="border: 3px solid #FF8A35">
+                <input type="text" class="form-control" id="Title" name="title_lokasi" value="{{$map->title_lokasi}}"  placeholder="Masukkan title lokasi... " style="border: 3px solid #FF8A35">
               </div>
               <div class="mb-3">
                 <label for="detail" class="form-label">Detail Lokasi</label>
-                <input type="text" class="form-control" id="detail" placeholder="Masukkan detail lokasi..." style="border: 3px solid #FF8A35">
+                <input type="text" class="form-control" id="detail" name="detail_lokasi" value="{{$map->detail_lokasi}}" placeholder="Masukkan detail lokasi..." style="border: 3px solid #FF8A35">
               </div>
               <div class="mb-3">
                 <label for="Harga" class="form-label">Harga Sewa Lokasi</label>
-                <input type="Number" class="form-control" id="Harga" placeholder="Masukkan Harga Sewa..." style="border: 3px solid #FF8A35">
+                <input type="Number" class="form-control" id="Harga" name="harga_sewa_lokasi" value="{{$map->harga_sewa_lokasi}}" placeholder="Masukkan Harga Sewa..." style="border: 3px solid #FF8A35">
               </div>
               <div class="mb-3">
                 <label for="embed" class="form-label">Embed google Maps</label>
-                <input type="text" id="embedinput" onchange="mapsview()" class="form-control" id="embed"  placeholder="Masukkan Embed google Maps Lokasi..." style="border: 3px solid #FF8A35" required>
-                <input class="d-none" name="embed_google_map" id="embed-sort" >
+                <input type="text" class="form-control" id="embed" name="embed_google_map" value="{{$map->embed_google_map}}" placeholder="Masukkan Embed google Maps Lokasi..." style="border: 3px solid #FF8A35">
               </div>
               <button type="submit" class="btn bg-primary-mu rounded-0">Submit</button>
               <button type="submit" class="btn btn-danger rounded-0">Delete</button>
