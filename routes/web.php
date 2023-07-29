@@ -50,6 +50,8 @@ Route::get('/detailpenggunaa/{id}', [UserController::class, 'detail2']);
 // });
 Route::get('/kompetisi', [KompetisiController::class, 'index']);
 Route::get('/tambahkompetisi', [KompetisiController::class, 'tambah']);
+Route::get('/editkompetisi/{id}/edit', [KompetisiController::class, 'edit']);
+Route::put('/editkompetisi/{id}', [KompetisiController::class, 'update']);
 Route::post('/kompetisi/store', [KompetisiController::class, 'store']);
 
 // Route::get('/tambahkompetisi', function () {
