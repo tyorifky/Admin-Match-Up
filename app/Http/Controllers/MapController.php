@@ -35,6 +35,7 @@ class MapController extends Controller
             'embed_google_map' => $request->embed_google_map,
         ]);
 
+        session()->flash('notification', 'Peta berhasil di tambah');
         return redirect('/peta');
     }
 
