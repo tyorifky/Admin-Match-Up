@@ -38,4 +38,16 @@ class MapController extends Controller
         session()->flash('notification', 'Peta berhasil di tambah');
         return redirect('/peta');
     }
+
+    public function destroy($id){
+        $map = Map::findOrFail($id);
+        $map->delete();
+
+        return redirect('/peta')->with('success', 'Peta berhasil dihapus.');
+    }
+
+    public function detaildestroy($id){
+        $map = Map::find($id);
+        return view('home.peta.detaildestroy', compact(['map']));
+    }
 }

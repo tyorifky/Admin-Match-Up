@@ -32,7 +32,13 @@
             <td>{{ $map->harga_sewa_lokasi }}</td>
             <td>
               <a href="/editpeta" class="btn btn-success">Edit</a>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Hapus</button>
+              <form action="/peta/{{$map->id}}" method="post">
+                @csrf
+                @method('delete')
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Hapus
+                </button>
+            </form>            
             </td>
           </tr>
           @endforeach
@@ -42,8 +48,8 @@
       </table>
     
     <a href="/tambahpeta" class="add-button rounded-circle m-3" style="background-image: url(/css/img/add.svg); background-size: contain;" ></a>
-    
-    <div class="modal" id="exampleModal" tabindex="-1">
+
+    {{-- <div class="modal" id="exampleModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content" style="width: 32vw" >
           <div class="modal-header bg-primary-mu">
@@ -58,10 +64,14 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-            <button type="button" class="btn btn-danger">Hapus</button>
+            <form action="/peta/{{$map->id}}" method="post">
+              @csrf
+              @method('delete')
+              <button type="button" class="btn btn-danger" type="submit" value="Delete">Hapus</button> 
+            </form>
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 </div>
 @endsection
