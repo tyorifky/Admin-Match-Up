@@ -1,6 +1,42 @@
 @extends('home.layout.main')
 
 @section('content')
+
+<div class="modal modal-custom" id="MapsInput" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-content-maps" >
+        <div class="modal-header bg-primary-mu">
+        <div class="blank logo-sm rounded-circle d-inline-block"></div>
+        <h5 class="ps-2 modal-title ">
+            Masukkan Peta
+        </h5>
+        <button type="button" class="btn-close btn-close-white"data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input class="w-100 ps-3" type="text" id="searchinput" onkeyup="searchLocation()" placeholder="Masukkan Nama Lokasi" style="height: 10%" type="text">
+            <div id="table_data" class="w-100 maps-wrapper">
+            <button class="maps-box p-3 b-0" data-filter="markas" onclick="mapsList(0)" data-bs-dismiss="modal">
+                <h6 class="fw-bold">Markas</h6>
+                <p class="m-0" >Detail</p>
+            </button>
+            <button class="maps-box p-3 b-0" data-filter="berlian" onclick="mapsList(1)" data-bs-dismiss="modal">
+                <h6 class="fw-bold">Berlian</h6>
+                <p class="m-0" >Detail</p>
+            </button>
+            <button class="maps-box p-3 b-0" data-filter="lapangan" onclick="mapsList(2)" data-bs-dismiss="modal">
+                <h6 class="fw-bold">Lapangan Besito</h6>
+                <p class="m-0" >Detail</p>
+            </button>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+        </div>
+    </div>
+    </div>
+</div>
+
     <div class="container-fluid vh-100" style="overflow-y: auto">
         <div class="d-flex align-items-center pt-3 pb-2 position-fixed bg-white w-75">
             <a href="/pengguna" class="logo-sm " style="background-image: url(/css/img/back.svg); background-size: contain;" ></a>
@@ -67,8 +103,10 @@
             <div class="kompetisi-wrapper-3 w-50 p-2 shadow-still">
                 <div class="mb-3" >
                     <label for="lokasi" class="form-label">Lokasi Kompetisi</label>
-                    <input type="text" class="form-control input-kompetisi h-50 " id="lokasi" name="lokasi" value="{{$kompetisi->lokasi}}" placeholder="Masukkan deskripsi juara..." style="border: 3px solid #FF8A35" readonly>
-                    <button>Hello</button>
+                    <div class="w-100" style="display: grid; grid-template-columns: 3fr 1fr; gap: 15px;">
+                        <input type="text" class="form-control input-kompetisi h-100" id="lokasi" name="lokasi" placeholder="Masukkan deskripsi juara..." style="border: 3px solid #FF8A35">
+                        <a data-bs-toggle="modal" data-bs-target="#MapsInput" class="btn bg-primary-mu h-100">Tambah</a>
+                    </div>
                 </div>
                 <p class="d-flex align-items-center m-0" >Detail Lokasi</p>
                 <iframe src="" class="blank w-100 h-100" frameborder="0"></iframe>

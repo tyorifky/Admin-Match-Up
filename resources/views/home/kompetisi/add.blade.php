@@ -122,7 +122,7 @@
                 </div>
                 <div class="mb-3 " >
                     <label for="tingkatan" class="form-label">Tingkatan</label>
-                    <input type="text" class="form-control input-kompetisi h-50" id="tingkatan" name="tingkatan" placeholder="Masukkan tingakatan kompetisi..." style="border: 3px solid #FF8A35">
+                    <input type="text" class="form-control input-kompetisi h-50" id="tingkatan" name="tingkatan" placeholder="Masukkan tingkatan kompetisi..." style="border: 3px solid #FF8A35">
                 </div>
             </div>
         </section>
@@ -131,23 +131,23 @@
             <div class="kompetisi-wrapper-5 w-50 p-2 shadow-still">
                 <div class="mb-3" style="grid-area: w5-1" >
                     <label for="date" class="form-label">Tanggal</label>
-                    <input type="date" class="form-control input-kompetisi h-50 " id="date" name="tanggal_pertandingan" placeholder="Masukkan jumlah slot..." style="border: 3px solid #FF8A35">
+                    <input type="date" class="form-control input-kompetisi h-50 " id="date" name="tanggal_pertandingan" placeholder="Masukkan tanggal kompetisi..." style="border: 3px solid #FF8A35">
                 </div>
                 <div class="mb-3" style="grid-area: w5-2" >
                     <label for="Harga Masuk" class="form-label">Harga Masuk Tersedia</label>
-                    <input type="number" class="form-control input-kompetisi h-50 " id="Harga Masuk" name="harga_tiket" placeholder="Masukkan jumlah slot..." style="border: 3px solid #FF8A35">
+                    <input type="number" class="form-control input-kompetisi h-50 " id="Harga Masuk" name="harga_tiket" placeholder="Masukkan harga masuk..." style="border: 3px solid #FF8A35">
                 </div>
                 <div class="mb-3" style="grid-area: w5-3" >
                     <label for="Lama Pertandingan" class="form-label">Lama Pertandingan</label>
-                    <input type="number" class="form-control input-kompetisi h-50 " id="Lama Pertandingan" name="lama_pertandingan" placeholder="Masukkan jumlah slot..." style="border: 3px solid #FF8A35">
+                    <input type="number" class="form-control input-kompetisi h-50 " id="Lama Pertandingan" name="lama_pertandingan" placeholder="Masukkan lama pertandingan..." style="border: 3px solid #FF8A35">
                 </div>
                 <div class="mb-3" style="grid-area: w5-4" >
                     <label for="Pukul" class="form-label">Pukul</label>
-                    <input type="number" class="form-control input-kompetisi h-50 " id="Pukul" name="waktu_pertandingan" placeholder="Masukkan jumlah slot..." style="border: 3px solid #FF8A35">
+                    <input type="number" class="form-control input-kompetisi h-50 " id="Pukul" name="waktu_pertandingan" placeholder="Masukkan waktu pertadingan..." style="border: 3px solid #FF8A35">
                 </div>
                 <div class="mb-3" style="grid-area: w5-5" >
                     <label for="PlusInfo" class="form-label">Informasi Tambahan</label>
-                    <textarea type="number" class="form-control input-kompetisi " id="slot" name="deskripsi_tambahan" placeholder="Masukkan jumlah slot..." style="border: 3px solid #FF8A35; height: 90%; resize: none "></textarea>
+                    <textarea type="number" class="form-control input-kompetisi " id="slot" name="deskripsi_tambahan" placeholder="Masukkan informasi tambahan..." style="border: 3px solid #FF8A35; height: 90%; resize: none "></textarea>
                 </div>
             </div>
             
